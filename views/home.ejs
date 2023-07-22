@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Chat</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="handle.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="login-form">
+            <h1>Register</h1>
+            <input type="text" id="txtUsername" placeholder="Nhập User name">
+            <button id="btnRegister">Register</button>
+
+        </div>
+
+        <div id="chat-form">
+            <div class="chat-left">
+                <div class="box-title">
+                    Users Online
+                </div>
+                <div id="content">
+                    <div class="users"></div>
+                </div>
+            </div>
+            <div class="chat-right">
+                <div>Hi chào <span id="userCurrent"></span></div>
+                <div id="btnLogout">Logout</div>
+                <div id="listChat"></div>
+                <div id="user-focus"></div>
+                <div style="display: flex ; margin-top: 12px;">
+                    <input id="txtChat" />
+                    <div id="btnChat">Gửi</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
